@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 2px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h2>Teste API REST - Weather</h2>
+   
+    <div>
+        <table border="1">
+            <tr>
+                <td><strong><label for="cidade">Cidade:</label></strong></td>
+                <td><p id="cidade"></p></td>
+            </tr>
+            <tr>
+                <td><strong><label for="vento">Velocidade do vento:</label></strong></td>
+                <td><p id="vento"></p></td>
+            </tr>
+            <tr>
+                <td><strong><label for="tempMax">Temperatura Máxima:</label></strong></td>
+                <td><p id="tempMax"></p></td>
+            </tr>
+            <tr>
+                <td><strong><label for="tempMin">Temperatura Mínima:</label></strong></td>
+                <td><p id="tempMin"></p></td>
+            </tr>
+            <tr>
+                <td><strong><label for="umidade">Umidade:</label></strong></td>
+                <td><p id="umidade"></p></td>
+            </tr>
+            <tr>
+                <td><strong><label for="nuvens">Status Nuvens:</label></strong></td>
+                <td><p id="nuvens"></p></td>
+            </tr>
+            
+        </table>
+        
+    </div>
+
+    <button id="botao">Pegar Dados</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,7 +1,7 @@
  const botao = document.querySelector("#botao"); 
 
 const getDados = async () => {
-    
+    //Deve ser feito o cadastro no site para pegar a chave de acesso e inserir no final da URL abaixo
     const apiClimaURL = 'https://api.openweathermap.org/data/2.5/weather?lat=-21.67&lon=-49.74&appid={{key}}';
     const res = await fetch(apiClimaURL);
     const data = await res.json();

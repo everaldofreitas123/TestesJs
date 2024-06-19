@@ -2,7 +2,7 @@
 
 const getDados = async () => {
     
-    const apiClimaURL = 'https://api.openweathermap.org/data/2.5/weather?lat=-21.67&lon=-49.74&appid=5bef3934ab1735139bf244c55863a8a7';
+    const apiClimaURL = 'https://api.openweathermap.org/data/2.5/weather?lat=-21.67&lon=-49.74&appid={{key}}';
     const res = await fetch(apiClimaURL);
     const data = await res.json();
     
